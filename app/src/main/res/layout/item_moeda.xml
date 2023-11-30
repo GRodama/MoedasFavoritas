@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/roundedbutton"
+    app:cardCornerRadius="50dp"
+    android:layout_marginTop="10dp"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BitCoin"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="@color/white"
+            android:inputType="textCapCharacters" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/teaxtData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Data da Aquisição: "
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/textData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:textColor="@color/white"
+            android:text="20/10/2022"
+            android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp">
+
+        <ImageButton
+            android:id="@+id/btnExcluir"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/roundedbuttonimage"
+            android:contentDescription="excluir"
+            app:srcCompat="@drawable/ic_excluir_24" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/roundedbuttonimage"/>
+
+            <ImageButton
+                android:id="@+id/btnEditar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="-35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/olho"
+                android:contentDescription="editar" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
